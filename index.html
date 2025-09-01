@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="left">
+        <img src="halie-west-25xggax4bSA-unsplash.jpg" class="img" alt="photo">
+        <div class="logo">
+            <img src="work-online-message-chat-internet-connection-svgrepo-com.svg" alt="logo">
+            <p>Greta's form</p>
+        </div>
+        <p>Photo by <a
+                href="https://unsplash.com/it/foto/pianta-a-foglia-verde-in-fotografia-ravvicinata-25xggax4bSA">Halie
+                West</a> on <a href="https://unsplash.com">Unsplash</a>.</p>
+    </div>
+    <div class="right">
+        <h1>This is not a real online service! You know you need something like this in your life to help you realize
+            your deepest dreams. Sign up now to get started. </h1>
+        <h2>You know you want to.</h2>
+        <form id="signup" novalidate>
+            <fieldset>
+                <legend>Let's do this.</legend>
+                <label for="name">First name
+                    <input type="text" name="name" id="name" placeholder="Greta"></label>
+
+
+                <label for="lastName">Last name
+                    <input type="text" name="lastName" id="lastName" placeholder="Bruno"></label>
+
+                <label for="email">Email
+                    <input type="email" name="email" id="email">
+                </label>
+                <label for="phoneNumber">Phone number
+                    <input type="tel" name="phoneNumber" inputmode="tel" pattern="^[0-9+\s()-]{7,}$" id="phoneNumber">
+                </label>
+
+
+                <label for="password">Password
+                    <input type="password" name="password" id="password" minlength="8" required>
+                </label>
+
+
+
+                <label for="confirm">Confirm password
+                    <input type="password" name="confirm" id="confirm" minlength="8" required>
+                </label>
+            </fieldset>
+
+            <div class="btn">
+                <button type="submit">Create account</button>
+            </div>
+        </form>
+        <p>Already have an account? <a href="#">Log in</a></p>
+        <script src="script.js" defer></script>
+    </div>
+</body>
+
+</html>
